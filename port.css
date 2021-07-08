@@ -1,0 +1,402 @@
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; 
+margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%;
+ margin:0; 
+border:none; }
+}
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+background-color: #1f1f1f;
+height: 100vh;
+width: 100vw;
+}
+
+
+#menu {
+padding: 10px;
+width: 45px;
+cursor: pointer;
+border: 2px solid #fff;
+border-radius: 8px;
+top: 3px;	
+left: 10px;	
+position: absolute;
+}
+
+
+.bar {	
+height: 5px;	
+width: 100%;	
+background-color: #fff;	
+display: block;	
+border-radius: 5px;	
+transition: 0.3s ease;
+}
+
+
+#bar1 {	
+transform: translateY(-4px);
+-webkit-transform: translateY(-4px);
+}
+
+#bar3 {	
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+}
+.nav li a {	
+color: #fff;	
+text-decoration: none;
+font-size: 18px;
+font-family: "PT Sans",sans-serif;
+}
+
+.nav li a:hover {	
+font-weight: bold;
+}
+.nav li {	
+list-style: none;	
+padding: 16px 0;
+}
+.nav {	
+padding: 0;	
+margin: 0 20px;	
+transition: 0.3s ease;	
+display: none;
+margin-top: 55px;
+}
+
+.menu-bg, #menu-bar {	
+top: 0;	
+left: 0;	
+position: fixed;
+background-color: steelblue;
+height: 47px;
+width: 100%;
+
+}
+
+.menu-bg {	
+z-index: 1;	
+width: 0;
+height: 0;	
+background-color: #2C3E50;
+border-radius: 50%;
+transition: 0.3s ease;
+}
+
+#menu-bar {	
+z-index: 2;	
+}
+
+
+.change .bar {	
+background-color: darkorange;
+}
+
+.change #bar1 {	
+transform: translateY(4px) rotateZ(-45deg);
+-webkit-transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {	
+transform: translateY(-6px) rotate(45deg);
+-webkit-transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2 {
+opacity: 0;
+} 
+
+.change {	
+display: block;
+}
+
+
+.header {    
+margin: 0px;   
+display: inline-block;
+float: right;
+right: 15px;	   
+color:  white;
+font-size: 22px;
+font-family: "serif","Arial","monospace",sans-serif;
+position: relative;
+top: 12px;
+text-transform: uppercase;
+-webkit-animation: glow 1s ease-in-out infinite alternate; 
+-moz-animation: glow 1s ease-in-out infinite alternate;  
+animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {  
+from {    
+text-shadow: 0 0 10px #fff;
+} 
+ to {    
+text-shadow: 0 0 20px #fff;
+}
+}
+
+.name {
+color: darkorange;
+}
+
+.vusi {
+color: yellow;
+}
+
+.end {
+vertical-align: sub;
+color: yellow;
+}
+
+
+
+
+.intro {
+background-image: url(images1.jpeg);
+background-position: center;
+background-size: cover;
+height: 350px;
+width: 100%;
+margin-top: 5%;
+}
+
+.intro h1 {
+color: white;
+font-size: 27px;
+font-family: "serif","Arial","monospace",sans-serif;
+margin-top: 40px;
+margin-left: 20px;
+}
+
+
+.intro p {
+color: white;
+font-size: 23px;
+font-family: "serif","Arial","monospace",sans-serif;
+margin-top: 5px;
+margin-left: 20px;
+}
+
+.intro h2 {
+color: white;
+font-size: 20px;
+font-family: "Arial","monospace",sans-serif;
+text-align: center;
+text-transform: uppercase;
+}
+   
+.h {
+background-color: #2B3856;
+padding: 7px;
+border-radius: 5px;
+}
+
+.c {
+background-color: #2B3856;
+padding: 7px;
+border-radius: 5px;
+}
+
+.j {
+background-color: #2B3856;
+padding: 7px;
+border-radius: 5px;
+}
+
+.intro .slogan {
+background-color: #2B3856;
+color: white;
+font-size: 20px;
+font-family: "Arial","monospace",sans-serif;
+float: right;
+margin-top: 100px;
+margin-right: 10px;
+padding: 7px;
+text-transform: uppercase;
+border-radius: 3px;
+}
+
+.project h2 {
+color: white;
+font-size: 25px;
+font-family:  "Arial","Narrow", sans-serif;
+margin-top: 50px;
+margin-left: 40px;
+text-transform: uppercase;
+text-shadow: 2px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+.hr1 {
+border: 1px solid transparent;
+height: 5px;
+background: linear-gradient(to left, skyblue, white);
+width: 200px;
+border-radius: 3px;
+margin-left: 40px;
+}
+
+.hr2 {
+border: 1px solid transparent;
+height: 5px;
+background: linear-gradient(to left, white, pink);
+width: 75%;
+float: right;
+}
+
+
+.project p {
+color: white;
+font-size: 18px;
+font-family:  "Arial","Narrow", sans-serif;
+margin-top: 20px;
+margin-left: 40px;
+}
+
+.project img {
+height: 250px;
+width: 75%;
+margin-left: 40px;
+border-radius: 4px;
+}
+
+.describe {
+color: white;
+font-size: 20px;
+font-family:  "Arial","Narrow", sans-serif;
+margin-top: 0px;
+margin-left: 40px;
+}
+
+.links li {
+display: inline-block;
+list-style: none;
+float: right;
+}
+
+.links li a {
+color: white;
+font-size: 18px;
+font-family:  "Arial","Narrow", sans-serif;
+text-decoration: none;
+margin-top: 0px;
+margin-right: 10px;
+padding: 5px 10px;
+}
+
+.about h2 {
+color: white;
+font-size: 25px;
+font-family:  "Arial","Narrow", sans-serif;
+margin-top: 0px;
+margin-left: 40px;
+text-transform: uppercase;
+text-shadow: 2px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+.about img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin-top: 30px;
+margin-left: 35%;
+}
+
+.about p, .contact p {
+color: white;
+font-size: 18px;
+font-family:  "Arial","Narrow", sans-serif;
+margin-top: 5px;
+margin-left: 40px;
+}
+
+.contact h2 {
+color: white;
+font-size: 25px;
+font-family:  "Arial","Narrow", sans-serif;
+margin-top: 40px;
+margin-left: 40px;
+text-transform: uppercase;
+text-shadow: 2px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+
+.contact h3 {
+color: white;
+font-size: 18px;
+font-family:  "Arial","Narrow", sans-serif;
+margin-left: 40px;
+
+}
+
+.contact a {
+color: white;
+font-size: 18px;
+float: right;
+margin-right: 10px;
+text-decoration: none;
+}
+
+.center {
+float: right;
+margin-right: 10px;
+}
+
+
+.project a:hover, .contact a:hover {
+color: red;
+}
+
+.footer {
+text-align: center;
+color: #868686;
+font-size: 12px;
+margin-top: 135px;
+}
+    
+
+footer { 
+width: 100%; 
+height: 450px; 
+position: relative; 
+background-color: #353535; 
+}
+  
+
+footer::before { 
+content: ""; 
+width: 50%; 
+height: 100px; 
+position: absolute; 
+top: -48px; 
+left: 0; 
+background-color: #353535; 
+transform: skewY(8deg); 
+} 
+
+
+footer::after { 
+content: ""; 
+width: 50%; 
+height: 100px; 
+position: absolute; 
+top: -48px; 
+right: 0; 
+background: #353535;
+transform: skewY(-8deg); 
+} 
